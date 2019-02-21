@@ -24,7 +24,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class MainActivity extends AppCompatActivity /*implements AdapterView.OnItemSelectedListener*/ {
 
     AppCompatSpinner spinner_product_group, spinner_literature, spinner_physician_sample, spinner_gift;
     EditText edt_literature, edt_physician, edt_gift, edt_accompanied, edt_remarks;
@@ -46,10 +46,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         spinner_physician_sample = findViewById(R.id.spinner_physician_sample);
         spinner_gift = findViewById(R.id.spinner_gift);
 
-        spinner_product_group.setOnItemSelectedListener(this);
+        /*spinner_product_group.setOnItemSelectedListener(this);
         spinner_literature.setOnItemSelectedListener(this);
         spinner_physician_sample.setOnItemSelectedListener(this);
-        spinner_gift.setOnItemSelectedListener(this);
+        spinner_gift.setOnItemSelectedListener(this);*/
 
         edt_literature = findViewById(R.id.edt_literature);
         edt_physician = findViewById(R.id.edt_physician);
@@ -81,18 +81,18 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         });
     }
 
-    @Override
+    /*@Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         // On selecting a spinner item
         String item = parent.getItemAtPosition(position).toString();
 
         // Showing selected spinner item
-        Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_LONG).show();
+        //Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_LONG).show();
     }
 
     public void onNothingSelected(AdapterView<?> arg0) {
         // TODO Auto-generated method stub
-    }
+    }*/
 
     public void getAllSpinnerData() {
 

@@ -55,7 +55,7 @@
             android:paddingStart="5dp"
             android:paddingEnd="5dp"
             android:text="Product Group"
-            android:textColor="#000" />
+            android:textColor="#000000" />
 
     </RelativeLayout>
 
@@ -218,7 +218,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:background="@android:color/darker_gray" />
 
     <RelativeLayout
@@ -299,7 +299,7 @@
         android:paddingTop="5dp"
         android:paddingRight="20dp"
         android:paddingBottom="5dp"
-        android:text="Submit"
+        android:text="S u b m i t"
         android:textColor="@android:color/white"
         android:textSize="20sp" />
 
