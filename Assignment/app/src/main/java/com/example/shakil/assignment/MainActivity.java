@@ -1,12 +1,10 @@
 package com.example.shakil.assignment;
 
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatSpinner;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -142,37 +140,29 @@ public class MainActivity extends AppCompatActivity /*implements AdapterView.OnI
 
                         //Style and populate spinner
                         ArrayAdapter<String> productAdapter = new ArrayAdapter<>(context, android.R.layout.simple_spinner_item, categoriesProductGroupList);
-
                         //Dropdown layout style
                         productAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
                         //Attaching data adapter to spinner
                         spinner_product_group.setAdapter(productAdapter);
 
                         //Style and populate spinner
                         ArrayAdapter<String> literatureAdapter = new ArrayAdapter<>(context, android.R.layout.simple_spinner_item, categoriesLiteratureList);
-
                         //Dropdown layout style
                         literatureAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
                         //Attaching data adapter to spinner
                         spinner_literature.setAdapter(literatureAdapter);
 
                         //Style and populate spinner
                         ArrayAdapter<String> physicianAdapter = new ArrayAdapter<>(context, android.R.layout.simple_spinner_item, categoriesPhysicianSampleList);
-
                         //Dropdown layout style
                         physicianAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
                         //Attaching data adapter to spinner
                         spinner_physician_sample.setAdapter(physicianAdapter);
 
                         //Style and populate spinner
                         ArrayAdapter<String> giftAdapter = new ArrayAdapter<>(context, android.R.layout.simple_spinner_item, categoriesProductGiftList);
-
                         //Dropdown layout style
                         giftAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
                         //Attaching data adapter to spinner
                         spinner_gift.setAdapter(giftAdapter);
                     }
